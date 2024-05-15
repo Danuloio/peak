@@ -2,7 +2,7 @@ local loaded = false
 game.Players.LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started and loaded == false then
         loaded = true
-        syn.queue_on_teleport("")
+        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Danuloio/peak/main/rejoin'))()")
     end
 end)
 coroutine.wrap(function()
