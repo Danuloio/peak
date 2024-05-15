@@ -5,7 +5,7 @@ game.Players.LocalPlayer.OnTeleport:Connect(function(State)
     end
 end)
 coroutine.wrap(function()
-    repeat task.wait(0.5) until workspace:FindFirstChild("dan_loio")
+    wait(6)
     for i = 1,4 do
         local part
         if i == 1 then
